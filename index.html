@@ -2,15 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/logos/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logos/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Fronted Mentor | Pricing component with toggle challenge</title>
+    <!--linck de font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
     <header>
-      <h1>Hola Mundo</h1>
-      <div id="app">Hola</div>
+        <h1>Our Pricing</h1>
+        <div class="selector"><h1>Annually</h1>
+        </div>
+        <h2> Monthly</h2>
+       
     </header>
+    <main>
+      <div id="cards">
+        <div class="card-izq">
+          <h2>Basic</h2>
+          <h3 class="mensual">&dollar;19.99</h3>
+          <h4 class="anual">&dollar;199.99</h4>
+          <span>500 GB Storage</span>
+          <span>2 Users Allowed</span>
+          <span> Send up to 3 GB</span>
+          <button class="boton">Learn More</button>
+        </div>
+        <div class="card-centro">
+          <h2> Professional</h2>
+          <h3 class="mensual">&dollar;24.99</h3>
+          <h4 class="anual">&dollar;249.99</h4>
+          <span>1 TB Storage</span>
+          <span>5 Users Allowed</span>
+          <span>Send up to 3 GB</span>
+          <button class="boton">Learn More</button>
+        </div>
+        <div class="card-der">
+          <h2>Master</h2>
+          <h3 class="mensual">&dollar;39.99</h3>
+          <h4 class="anual">&dollar;399.99</h4>
+          <span>2 TB Storage</span>
+          <span>10 Users Allowed</span>
+          <span>Send up to 20 GB</span>
+          <button class="boton">Learn More</button>
+        </div>
+      </div>
+    </main>
+  </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
