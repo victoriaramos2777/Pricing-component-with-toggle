@@ -1,11 +1,25 @@
-import '../assets/styles/style.scss'
-import javascriptLogo from '../assets/logos/JavaScript.svg'
-import { setupCounter } from './modules/counter.js'
+import "../assets/styles/style.css";
+//constante para llamar el selector
+const selector = document.getElementById("selector-barra");
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <p>Esta es un aplantilla de vanilla js editada con vite.</p>
-  </div>
-`
+// evento escucha para el selector-barra
+selector.addEventListener("click", myFuncion);
+// funcion para selecionar
+function myFuncion() {
+  let mensual = document.getElementsByTagName("h3");
+  let anual = document.getElementsByTagName("h4");
 
-setupCounter(document.querySelector('#counter'))
+  for (let i = 0; i < mensual.length; i++) {
+    for (let x = 0; x < anual.length; x++) {
+      if (mensual[i].style.display === "none") {
+        mensual[i].style.display = "block";
+        anual[i].style.display = "none";
+        selector.style.justifyContent = "flex-end";
+      } else {
+        mensual[i].style.display = "none";
+        anual[i].style.display = "block";
+        selector.style.justifyContent = "flex-start";
+      }
+    }
+  }
+}
