@@ -172,17 +172,39 @@ button:hover{
   border: solid 1px;
   border-radius: 7px; 
 }
+
+.atribucion{
+  margin-top: 5%;
+  display: flex;
+justify-content: space-around;
+
+}
+.atribucion a{
+   text-decoration: none;
+   color: hsl(237, 63%, 64%);
+}
 /* media queries*/
 
 @media screen and (max-width:950px){
   #cards{
     display: flex;
     flex-direction: column;
+    min-width: 400px;
   }
   .card-centro,.card-der,.card-izq{
     margin: 1rem;
     border-radius: 10px;
     width: 80%;
+    max-width: 400px;
   }
   
+  .atribucion{
+    margin-top: 2%;
+    text-align: center;
+    
+    
+
+  
+  } 
 }
+
